@@ -1,22 +1,22 @@
 ::-moz-selection {
-  background: #3498db;
+  background: #aaff00;
 }
 ::selection {
-  background: #3498db;
+  background: #aaff00;
 }
 
 a {
-  color: #3498db;
+  color: #aaff00;
 }
 
 a:hover {
-	color: #2984c0;
+	color: #aaff00;
 }
 
 /* --- button theme --- */
 .btn-theme {
-  background: #3498db;
-  *background-color: #3498db;
+  background: #aaff00;
+  *background-color: #aaff00;
 }
 
 .btn-theme:hover,
@@ -24,21 +24,21 @@ a:hover {
 .btn-theme.active,
 .btn-theme.disabled,
 .btn-theme[disabled] {
-  background: #2984c0;
-  *background: #2984c0;
+  background: #aaff00;
+  *background: #aaff00;
 }
 
 /* --- slogan --- */
 .slogan h1 span {
-	color: #3498db;
+	color: #aaff00;
 }
 
 .tweet a {
-	color:#3498db;
+	color:#aaff00;
 }
 
 .tweet .tweet_time a:hover i {
-	color:#3498db;
+	color:#aaff00;
 }
 
 
@@ -47,32 +47,32 @@ a:hover {
 .icon-square:hover,
 .icon-rounded:hover,
 .icon-circled:hover {
-    background-color: #3498db;
+    background-color: #aaff00;
 }
 [class^="icon-"].active,
 [class*=" icon-"].active {
-    background-color: #3498db;
+    background-color: #aaff00;
 }
 
 
 
 
 .navbar .nav > li > a:hover {
-  color: #3498db;
+  color: #aaff00;
 }
 
 
 ul.nav li.current {
-  background: #3498db;
+  background: #aaff00;
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
-	background: #3498db;
+	background: #98d400;
 }
 
 input:focus, textarea:focus {
-	border: 1px solid #3498db;
+	border: 1px solid #98d400;
 	border-width:4px;
 }
 textarea:focus,
@@ -91,28 +91,28 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #3498db;
+  border-color: #98d400;
 }
 
 ul.contact-list li input.form_input:focus ,
 ul.contact-list li textarea.form_textarea:focus  {
-	border-color:#3498db;
+	border-color:#98d400;
 }
 
 
 /* tab */
 
 .nav-tabs > a {
-	color:#3498db;
+	color:#98d400;
 }
 
 
 /* accordion */
 .accordion-heading a:hover {
-	color: #3498db;
+	color: #98d400;
 }
 .accordion-heading .active{
-	color: #3498db;
+	color: #98d400;
 }
 
 .accordion-inner {
@@ -123,5 +123,5 @@ ul.contact-list li textarea.form_textarea:focus  {
 /* portfolio */
 
 .thumb-wrapp{
-	background:#3498db;
+	background:#98d400;
 }
