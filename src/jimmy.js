@@ -1,19 +1,9 @@
-jimmy = 0;
-while(jimmy < 25)
-{
-	jimmy++;
-	sleep(1000);
-	console.log(jimmy);
+let ninja = new Streamer("Ninja", "Ninja.com");
+let brendan = new Streamer("Brendan", "Brendino.com");
+console.log(ninja.getName());
+console.log(brendan.getName());
 
-	
-}
+let teamWinners = new Team(ninja, brendan);
 
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
-
+console.log(teamWinners.getStreamer1());
+console.log(brendan.getScore());

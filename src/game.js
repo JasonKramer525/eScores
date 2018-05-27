@@ -5,6 +5,14 @@ function Game (team1, team2)
 
 }
 
+Game.prototype.getTeam1 = function(){
+	return this.team1;
+}
+
+Game.prototype.getTeam2 = function(){
+	return this.team2;
+}
+
 Game.prototype.getTeam1Score = function(){
 	return this.team1.score;
 }
