@@ -6,6 +6,14 @@ function Team (streamer1, streamer2)
 
 }
 
+Team.prototype.getStreamer1 = function(){
+	return this.streamer1;
+}
+
+Team.prototype.getStreamer2 = function(){
+	return this.streamer2;
+}
+
 Team.prototype.getScore = function(){
 	return this.score;
 }
