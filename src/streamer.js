@@ -1,7 +1,8 @@
-function Streamer (name, link)
+function Streamer (name, link, gameName)
 {
 	this.name = name;
 	this.link = link;
+	this.gameName = gameName;
 	this.score = 0;
 
 }
@@ -11,7 +12,11 @@ Streamer.prototype.getName = function(){
 }
 
 Streamer.prototype.getLink = function(){
-	return this.url;
+	return this.link;
+}
+
+Streamer.prototype.getGameName = function(){
+	return this.getGameName;
 }
 
 Streamer.prototype.getScore = function(){
