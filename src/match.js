@@ -2,8 +2,8 @@ function Match (game1, game2)
 {
 	this.game1 = game1;
 	this.game2 = game2;
-	this.team1Total = game1.team1.score + game2.team1.score;
-	this.team2Total = game1.team2.score + game2.team2.score;
+	this.team1Total = game1.team1FinalScore + game2.team1FinalScore;
+	this.team2Total = game1.team2FinalScore + game2.team2FinalScore;
 
 }
 
