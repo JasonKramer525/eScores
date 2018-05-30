@@ -1,13 +1,7 @@
-var ninja = new Streamer("Ninja", "Ninja.com");
-var brendan = new Streamer("Brendan", "Brendino.com");
-var brup = new Streamer("Brupis", "Brupis.gov")
-var jason = new Streamer("Jason", "Brupis.gov")
 
 
-console.log(ninja.getName());
-console.log(brendan.getName());
+$.ajax({
+            url: "https://api.fortnitetracker.com/v1/profile/pc/ninja",
+            headers: {"TRN-Api-Key": "8d06d9a4-2e55-45ac-a3aa-dc49e7797ee6"}
 
-var teamWinners = new Team(ninja, brendan);
-
-console.log(teamWinners.getStreamer1());
-console.log(brendan.getScore());
+      });
