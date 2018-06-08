@@ -2,7 +2,8 @@
 $fp = fopen("dashboard.txt", "w");
 file_put_contents("text.txt", "");
 
-$names = array("ninja", "KingRichard15", "TSM_Daequan", "Tramear", "Mr. Smile More", "CDNThe3rd", "TheDoritoKilla", "coL%20Hogman", "DolanDark_", "ItsCizzorz", "ValkyraeXD", "xd McCreamy", "xd Zuckles", "ChicaLive", "FaZe%20SpaceLyon ", "KYRSP33DY", "sidearmsbruh", "Ninja", "CourageJD ", " 2xChampion ", " Kraftyyz ", " XxGhostNinja187 ", " DooM%20Bigfoltz ", " Dark ", " Yelo. ", " ImKeithCozart ", " KennySoom ", " OpTic Baldy ", " OpTic Dramas ", " Niick28T ", " NepentehZ ", " 100T%20Nadeshot ", " Kenith ", " ChancesFrost ", " TheJoshOG ", " Typical%20Gamer ", " thiefs ", " BobbyBoJanglles ", " bchillz ", " NotNoahJ456 ", " Avxry ", " FaZe%20Tfue ", " FaZe%20cLoak ", " Nick%20Eh%2030 ", " ONE_shot_gurl ", " ItsMeVikkstar123 ", " TwitchTinny ", " haroldbog17 ", " theburntchipp ", " fazey_banks ", " BOT%20Tênnp0 ", " drlupo ", " imtimthetatman ", " JoogSquad69 ", " Fnatic_Ettnix ", " NICKMERCS ", " SypherPK ", " TheTBNRfrags ", " LachyDachy ", " ComedyShortsDeji ", " Wizzite ", " TSM_Myth ", " TSM_Hamlinz ");
+$names = array("ninja", "KingRichard15", "TSM_Daequan", "Tramear", "Mr. Smile More", "CDNThe3rd", "TheDoritoKilla", "coL%20Hogman", "DolanDark_", "ItsCizzorz", "ValkyraeXD", "xd McCreamy", "xd Zuckles", "ChicaLive", "FaZe%20SpaceLyon ", "KYRSP33DY", "sidearmsbruh", "Ninja", "CourageJD", "2xChampion", "Kraftyyz", "XxGhostNinja187", "DooM%20Bigfoltz", "Dark", "Yelo", "ImKeithCozart", "KennySoom", "OpTic Baldy", "OpTic Dramas", "Niick28T", "NepentehZ", "100T%20Nadeshot", "Kenith", "ChancesFrost", "TheJoshOG", "Typical%20Gamer", "thiefs", "BobbyBoJanglles", "bchillz", "NotNoahJ456", "Avxry", "FaZe%20Tfue", "FaZe%20cLoak", "Nick%20Eh%2030", "ONE_shot_gurl", "ItsMeVikkstar123", "TwitchTinny", "haroldbog17", "theburntchipp", "fazey_banks", "BOT%20Tênnp0", "drlupo", "imtimthetatman", "JoogSquad69", "Fnatic_Ettnix", "NICKMERCS", "SypherPK", "TheTBNRfrags", "LachyDachy", "ComedyShortsDeji", "Wizzite", "TSM_Myth", "TSM_Hamlinz");
+$console = array();
 
 for($i=0;$i<count($names);$i++){
 $ch = curl_init();
@@ -23,10 +24,10 @@ $data = json_decode(file_get_contents("stats.json"));
 $name = $data->epicUserHandle;
 $newest_kills = $data->recentMatches[0]->kills;
 $newest_id = $data->recentMatches[0]->id; 
-$newest_time = $data->recentMatches[0]->dateCollected; 
+//$newest_time = $data->recentMatches[0]->dateCollected; 
 
 echo $newest_id;
-file_put_contents("text.txt", "name: ".$name . ", kills: " .$newest_kills .", id: ". $newest_id . ", time: ".$newest_time."\n",FILE_APPEND);
+file_put_contents("text.txt", "name: ".$name . "\t kills: " .$newest_kills ."\t id: ". $newest_id . "\n",FILE_APPEND);
 
 
 sleep(4);
