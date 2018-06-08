@@ -33,7 +33,9 @@ file_put_contents("text.txt", "name: ".$name . "\t kills: " .$newest_kills ."\t 
 echo $i;
 sleep(4);
 }
-fclose($fp);
+file_put_contents("\n",FILE_APPEND);
+
 }
+fclose($fp);
 
 ?>
