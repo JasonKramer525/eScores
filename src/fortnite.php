@@ -2,7 +2,7 @@
 $fp = fopen("dashboard.txt", "w");
 file_put_contents("text.txt", "");
 
-$names = array("pegasus2012", "KingRichard15", "TSM_Daequan", "Tramear", "Mr. Smile More", "CDNThe3rd", "TheDoritoKilla", "coL%20Hogman", "DolanDark_", "ItsCizzorz", "ValkyraeXD", "xd McCreamy", "xd Zuckles", "ChicaLive", "FaZe%20SpaceLyon ", "KYRSP33DY", "sidearmsbruh", "Ninja", "CourageJD", "2xChampion", "Kraftyyz", "psn(XxGhostNinja187)", "DooM%20Bigfoltz", "Dark", "Yelo.", "ImKeithCozart", "KennySoom", "OpTic Baldy", "OpTic Dramas", "Niick28T", "NepentehZ", "100T%20Nadeshot", "Kenith", "ChancesFrost", "TheJoshOG", "Typical%20Gamer", "thiefs", "BobbyBoJanglles", "bchillz", "NotNoahJ456", "Avxry", "FaZe%20Tfue", "FaZe%20cLoak", "Nick%20Eh%2030", "ONE_shot_gurl", "ItsMeVikkstar123", "TwitchTinny", "haroldbog17", "theburntchipp", "B%CE%91%CE%9D%CE%9AS", "BOT%20T%C3%AAnnp0", "drlupo", "imtimthetatman", "JoogSquad69", "Fnatic_Ettnix", "NICKMERCS", "SypherPK", "TheTBNRfrags", "LachyDachy", "ComedyShortsDeji", "Wizzite", "TSM_Myth", "TSM_Hamlinz");
+$names = array("pegasus2012", "KingRichard15", "TSM_Daequan", "Tramear", "Mr. Smile More", "CDNThe3rd", "TheDoritoKilla", "coL%20Hogman", "DolanDark_", "ItsCizzorz", "ValkyraeXD", "xd McCreamy", "xd Zuckles", "ChicaLive", "FaZe%20SpaceLyon ", "KYRSP33DY", "sidearmsbruh", "Ninja", "CourageJD", "2xChampion", "Kraftyyz", "psn(XxGhostNinja187)", "DooM%20Bigfoltz", "Dark", "Yelo.", "ImKeithCozart", "KennySoom", "OpTic Baldy", "OpTic Dramas", "Niick28T", "NepentehZ", "100T%20Nadeshot", "Kenith", "ChancesFrost", "TheJoshOG", "Typical%20Gamer", "thiefs", "BobbyBoJanglles", "bchillz", "NotNoahJ456", "Avxry", "FaZe%20Tfue", "FaZe%20cLoak", "Nick%20Eh%2030", "ONE_shot_gurl", "ItsMeVikkstar123", "TwitchTinny", "haroldbog17", "theburntchipp", "fazezaddy", "BOT%20T%C3%AAnnp0", "drlupo", "imtimthetatman", "JoogSquad69", "Fnatic_Ettnix", "NICKMERCS", "SypherPK", "TheTBNRfrags", "LachyDachy", "ComedyShortsDeji", "Wizzite", "TSM_Myth", "TSM_Hamlinz");
 $console = array("pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "psn", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "psn", "psn", "pc", "pc", "psn", "psn", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "pc", "psn", "pc", "pc", "pc", "pc", "pc", "psn", "pc", "pc", "pc", "pc", "pc", "pc", "pc",);
 
 while(true){
@@ -30,7 +30,7 @@ $newest_id = $newest_id % 1000;
 
 file_put_contents("text.txt", "name: ".$name . "\t kills: " .$newest_kills ."\t id: ". $newest_id . "\n",FILE_APPEND);
 
-
+echo $i;
 sleep(4);
 }
 fclose($fp);
